@@ -8,10 +8,14 @@ import EconomyandSociety from './EconomyandSociety';
 import InfrastructureandEnvironment from './InfrastructureandEnvironment';
 import LeadershipandStrategy from './LeadershipandStrategy';
 
+
 function App() {
   return (
     <div className="App">
       <TopAppBar />
+      <Layout props>
+        <LayoutGrid />
+      </Layout>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="health-and-wellbeing" element={<HealthandWellbeing />} />
