@@ -3,19 +3,18 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 import TopAppBar from './Components/AppBar';
 import Home from './Home';
-import HealthandWellbeing from './HealthandWellbeing';
-import EconomyandSociety from './EconomyandSociety';
-import InfrastructureandEnvironment from './InfrastructureandEnvironment';
-import LeadershipandStrategy from './LeadershipandStrategy';
+import HealthandWellbeing from './Routes/HealthandWellbeing';
+import EconomyandSociety from './Routes/EconomyandSociety';
+import InfrastructureandEnvironment from './Routes/InfrastructureandEnvironment';
+import LeadershipandStrategy from './Routes/LeadershipandStrategy';
+import { Layout } from './Components/Layout';
+import { LayoutGrid } from './Components/LayoutGrid';
 
 
 function App() {
   return (
     <div className="App">
       <TopAppBar />
-      <Layout props>
-        <LayoutGrid />
-      </Layout>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="health-and-wellbeing" element={<HealthandWellbeing />} />
